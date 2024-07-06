@@ -6,7 +6,7 @@ Connection();
 
 const io=new Server(5555,{
     cors:{
-        origin:'http://localhost:3000',
+        origin:'https://note-sync-pi.vercel.app',
         methods:['GET','POST']
     }
 })
