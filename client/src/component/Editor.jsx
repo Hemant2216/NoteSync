@@ -44,7 +44,7 @@ const Editor =()=>{
         setQuill(quillServer);
     },[]);
     useEffect(()=>{
-        const socketServer=io('http://localhost:5555');
+        const socketServer=io('https://notesync-be.onrender.com');
         setSocket(socketServer);
         return ()=>{
             socketServer.disconnect();
